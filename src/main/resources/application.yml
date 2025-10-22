@@ -1,0 +1,19 @@
+server:
+  port: 8111
+
+spring:
+  jackson:
+   default-property-inclusion: non-null
+  datasource:
+   url: jdbc:mysql://127.0.0.1/kickoff
+   username: root
+  jpa:
+    datasource-platform: org.hibernate.dialect.MySQL8InnoDBDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+     ddl-auto: update
+    properties:
+     hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+
